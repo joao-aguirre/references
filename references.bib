@@ -644,6 +644,37 @@ series = {
 },
 }
 
+@article{2005-cpc-yao,
+title = {
+    Improved neighbor list algorithm in molecular simulations using cell
+    decomposition and data sorting method
+},
+journal = {Computer Physics Communications},
+volume = {161},
+number = {1},
+pages = {27-35},
+year = {2004},
+issn = {0010-4655},
+doi = {https://doi.org/10.1016/j.cpc.2004.04.004},
+url = {https://www.sciencedirect.com/science/article/pii/S0010465504002097},
+author = {Zhenhua Yao and Jian-Sheng Wang and Gui-Rong Liu and Min Cheng},
+keywords = {Molecular dynamics, Neighbor list, Verlet table, Cell linked list},
+abstract = {
+    An improved neighbor list algorithm is proposed to reduce unnecessary
+        interatomic distance calculations in molecular simulations. It combines
+        the advantages of Verlet table and cell linked list algorithms by using
+        cell decomposition approach to accelerate the neighbor list construction
+        speed, and data sorting method to lower the CPU data cache miss rate, as
+        well as partial updating method to minimize the unnecessary
+        reconstruction of the neighbor list. Both serial and parallel
+        performance of molecular dynamics simulation are evaluated using the
+        proposed algorithm and compared with those using conventional Verlet
+        table and cell linked list algorithms. Results show that the new
+        algorithm outperforms the conventional algorithms by a factor of 2∼3 in
+        cases of both small and large number of atoms.
+}
+}
+
 @article{2007-ces-zhu,
 author = {H. P. Zhu and Z. Y. Zhou and R. Y. Yang and A. B. Yu},
 journal = {Chemical Engineering Science},
@@ -1230,6 +1261,42 @@ abstract = {
 },
 doi = {10.1016/j.ces.2010.09.035},
 publisher = {Elsevier BV},
+}
+
+@article{2010-cpc-li,
+title = {
+    Comparison research on the neighbor list algorithms: Verlet table and
+    linked-cell
+},
+journal = {Computer Physics Communications},
+volume = {181},
+number = {10},
+pages = {1682-1686},
+year = {2010},
+issn = {0010-4655},
+doi = {https://doi.org/10.1016/j.cpc.2010.06.005},
+url = {https://www.sciencedirect.com/science/article/pii/S0010465510001827},
+author = {Wan-Qing Li and Tang Ying and Wan Jian and Dong-Jin Yu},
+keywords = {
+    Discrete Element Method (DEM), Molecular Dynamics (MD), Verlet table
+    algorithm, Linked-cell algorithm
+},
+abstract = {
+
+    A Discrete Element Method (DEM) simulation program of gravity driven
+    granular collapse is developed to compare the performance of Verlet table
+    and linked-cell algorithms. Focusing on the simulation efficiency, the two
+    neighbor list algorithms' parameters are discussed such as search radius Rs,
+    cell edge Lc, updating interval time step (UPTime) and the number of
+    particles in simulation system N. The results show that appropriate
+    parameters will improve the simulation efficiency, while the inappropriate
+    parameters will debase the simulation efficiency, even leading to the
+    simulation system crash. The results and discussions presented in this paper
+    will be useful not only for parameters adjustment of DEM but also for
+    Molecular Dynamics (MD) simulations. It will be beneficial to improving the
+    simulation efficiency, especially for the researchers who intend to carry
+    out DEM or MD simulation.
+}
 }
 
 @article{2010-jht-walker,
@@ -2815,6 +2882,57 @@ url = {
 publisher = {Wiley},
 }
 
+@inproceedings{2020-ieee-ipdpsw-chekaraou,
+author = {
+    Abdoul Wahid Mainassara Chekaraou and Xavier Besseron and Alban Rousset and
+    Emmanuel Kieffer and Peters Bernhard
+},
+title = {
+    Predicting near-optimal skin distance in Verlet buffer approach for Discrete
+    Element Method
+},
+eprint = {https://orbilu.uni.lu/handle/10993/44814},
+eprinttype = {hdl},
+language = {English},
+year = {June 2020},
+doi = {10.1109/IPDPSW50202.2020.00093},
+booktitle = {
+    10th IEEE Workshop on Parallel / Distributed Combinatorics and Optimization
+},
+abstract = {
+    The Verlet list method is a well-known bookkeeping technique of the
+    interaction list used both in Molecular Dynamic (MD) and Discrete Element
+    Method (DEM). The Verlet buffer technique is an enhancement of the Verlet
+    list that consists of extending the interaction radius of each particle by
+    an extra margin to take into account more particles in the interaction list.
+    The extra margin is based on the local flow regime of each particle to
+    account for the different flow regimes that can coexist in the domain.
+    However, the choice of the near-optimal extra margin (which ensures the best
+    performance) for each particle and the related parameters remains unexplored
+    in DEM unlike in MD. In this study, we demonstrate that the near-optimal
+    extra margin can fairly be characterized by four parameters that describe
+    each particle local flow regime: the particle velocity, the ratio of the
+    containing cell size to particle size, the containing cell solid fraction,
+    and the total number of particles in the system. For this purpose, we model
+    the near-optimal extra margin as a function of these parameters using a
+    quadratic polynomial function. We use the DAKOTA SOFTWARE to carry out the
+    Design and Analysis of Computer Experiments (DACE) and the sampling of the
+    parameters for the simulations. For a given instance of the set of
+    parameters, a global optimization method is considered to find the
+    near-optimal extra margin. The latter is required for the construction of
+    the quadratic polynomial model. The numerous simulations generated by the
+    sampling of the parameter were performed on a High-Performance Computing
+    (HPC) environment granting parallel and concurrent executions. This work
+    provides a better understanding of the Verlet buffer method in DEM
+    simulations by analyzing its performances and behavior in various
+    configurations. The near-optimal extra margin can reasonably be predicted
+    by two out of the four chosen parameters using the quadratic polynomial
+    model. This model has been integrated into XDEM in order to automatically
+    choose the extra margin without any input from the user. Evaluations on real
+    industrial-level test cases show up to a 26\% reduction of the execution
+    time.
+}
+}
 @article{2020-jqsrt-farmer,
 author = {Joseph Farmer and Somesh Roy},
 journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
@@ -3814,6 +3932,53 @@ url = {https://raytracing.github.io/books/RayTracingTheNextWeek.html},
 series = {Ray Tracing in One Weekend},
 note = {Accessed: 2024-09-16},
 timestamp = {2024-09-16},
+}
+
+@article{2025-cpm-wang,
+title = {
+    A novel update criterion of Verlet list for accelerating DEM computation
+    when modeling geotechnical dense granular materials under periodic loading
+},
+journal = {Computational Particle Mechanics},
+volume = {12},
+number = {6},
+pages = {5111-5127},
+year = {2025},
+issn = {2196-4386},
+doi = {https://doi.org/10.1007/s40571-025-00986-1},
+url = {https://www.sciencedirect.com/science/article/pii/S2196438626002172},
+author = {
+    Shuchen Wang and Longlong Fu and Haonan Xi and Yongjia Qiu and Shunhua Zhou
+},
+keywords = {
+    Discrete element method, Geotechnical dense granular material, Computational
+    efficiency, Local particle coordinate system, Verlet list, Engineering,
+    Civil Engineering, Resources Engineering and Extractive Metallurgy
+},
+abstract = {
+    Discrete element method (DEM) based on graphic processing unit (GPU) is
+    widely utilized for studying the responses of geotechnical dense granular
+    materials under periodic or traffic loading. However, limited computational
+    efficiency of DEM hinders its further application. Conventionally, the
+    criterion for updating particles' potential contact list (i.e., Verlet list)
+    is assessing whether the maximum particle displacement in global coordinate
+    system exceeds the threshold. Although geotechnical dense particles exhibit
+    considerable quasi-periodic displacement under periodic or traffic loading,
+    the potential contact targets for most particles do not change during quite
+    a few loading cycles. Therefore, there are numerous redundant updates of
+    Verlet list induced by quasi-periodic displacement, restricting
+    computational efficiency. In this study, we propose a novel criterion for
+    Verlet list updating, in which the displacement of particles in local
+    particle coordinate system is considered. Then, the proposed criterion is
+    plugged in the MUSEN software. By simulating previous laboratory full-scale
+    half-sleeper model tests, the accuracy and performance of the proposed
+    criterion are testified based on GPU computing. The results show that
+    compared to conventional criterion, the proposed criterion reduces the
+    updates of Verlet list by 43–68\% and improves the computational efficiency
+    by 14–47\%. This study indicates a potential way to improve computational
+    efficiency of the GPU-based DEM for geotechnical dense granular materials
+    under periodic loading.
+}
 }
 
 @misc{2025-khronosgroup-vulkan,
