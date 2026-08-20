@@ -697,6 +697,46 @@ abstract = {
 },
 }
 
+@article{2004-ec-osullivan,
+author = {O'Sullivan, Catherine and Bray, Jonathan D.},
+title = {
+    Selecting a suitable time step for discrete element simulations that use the
+    central difference time integration scheme
+},
+journal = {Engineering Computations},
+volume = {21},
+number = {2-3-4},
+pages = {278-303},
+year = {2004},
+month = {03},
+abstract = {
+    The distinct element method as proposed by Cundall and Strack uses the
+    computationally efficient, explicit, central difference time integration
+    scheme. A limitation of this scheme is that it is only conditionally stable,
+    so small time steps must be used. Some researchers have proposed using an
+    implicit time integration scheme to avoid the stability issues arising from
+    the explicit time integrator typically used in these simulations. However,
+    these schemes are computationally expensive and can require a significant
+    number of iterations to form the stiffness matrix that is compatible with
+    the contact state at the end of each time step. In this paper, a new, simple
+    approach for calculating the critical time increment in explicit discrete
+    element simulations is proposed. Using this approach, it is shown that the
+    critical time increment is a function of the current contact conditions.
+    Considering both two‐ and three‐dimensional scenarios, the proposed refined
+    estimates of the critical time step indicate that the earlier
+    recommendations contained in the literature can be unconservative, in that
+    they often overestimate the actual critical time step. A three‐dimensional
+    simulation of a problem with a known analytical solution illustrates the
+    potential for erroneous results to be obtained from discrete element
+    simulations, if the time‐increment exceeds the critical time step for stable
+    analysis.
+},
+issn = {0264-4401},
+doi = {10.1108/02644400410519794},
+url = {https://doi.org/10.1108/02644400410519794},
+eprint = {https://www.emerald.com/ec/article-pdf/21/2-3-4/278/718350/02644400410519794.pdf},
+}
+
 @article{2005-cpc-yao,
 title = {
     Improved neighbor list algorithm in molecular simulations using cell
@@ -836,6 +876,58 @@ doi = {10.1016/B978-0-08-045051-3.00005-1},
 url = {https://www.sciencedirect.com/science/article/pii/B9780080450513000051},
 publisher = {Elsevier},
 address = {Burlington},
+}
+
+@article{2008-cce-kruggel-emden,
+title = {
+    Selection of an appropriate time integration scheme for the discrete element
+    method (DEM)
+},
+journal = {Computers \& Chemical Engineering},
+volume = {32},
+number = {10},
+pages = {2263-2279},
+year = {2008},
+issn = {0098-1354},
+doi = {https://doi.org/10.1016/j.compchemeng.2007.11.002},
+url = {https://www.sciencedirect.com/science/article/pii/S0098135407002864},
+author = {H. Kruggel-Emden and M. Sturm and S. Wirtz and V. Scherer},
+keywords = {
+    Granular dynamics, Integration schemes, Discrete element method, Linear
+    force model, Analytical solution
+},
+abstract = {
+    With increasing computer power simulation methods addressing discrete
+    problems in a broad range of scientific fields become more and more
+    available. The discrete element method is one of these discontinuous
+    approaches used for modeling granular assemblies. Within this method the
+    dynamics of a system of particles is modeled by tracking the motion of
+    individual particles and their interaction with their adjacencies over time.
+    For the interaction of particles, force models need to be specified. The
+    resulting equations of motion are of coupled ordinary differential
+    configuration, which are usually solved by explicit numerical schemes. In
+    large-scale systems like avalanches, planetary rings, hoppers or chemical
+    reactors vast numbers of particles need to be addressed. Therefore,
+    integration schemes need to be accurate on the one hand, but also
+    numerically efficient on the other hand. This numerical efficiency is
+    characterized by the method's demand for memory and CPU-time. In this paper
+    a number of mostly explicit numerical integration schemes are reviewed and
+    applied to the benchmark problem of a particle impacting a fixed wall as
+    investigated experimentally by Gorham and Kharaz [Gorham, D. A., \& Kharaz,
+    A. H. (2000). The measurement of particle rebound characteristics. Powder
+    Technology, 112(3), 193–202]. The accurate modeling which includes the
+    correct integration of the equations of motion is essential. In discrete
+    simulation methods the accuracy of properties on the single particle level
+    directly influence the global properties of the granular assembly like
+    velocity distributions, porosities or flow rates, whereas their correct
+    knowledge is often of key interest in engineering applications. The impact
+    experiment is modeled with simple force displacement approaches which allow
+    an analytical solution of the problem. Aspects discussed are the dependency
+    of the step size on the accuracy of certain collision properties and the
+    related computing time. The effect of a fixed time step is analyzed.
+    Guidelines for the efficient selection of an integration scheme considering
+    the additional computational cost by contact detection and force calculation
+    are presented. 
 }
 
 @article{2008-ces-kruggel-emden,
