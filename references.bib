@@ -2161,6 +2161,43 @@ keywords = {
 groups = {non-spherical particles},
 }
 
+@article{2015-kppj-marigo,
+title = {
+    Discrete Element Method (DEM) for Industrial Applications: Comments on
+    Calibration and Validation for the Modelling of Cylindrical Pellets
+},
+author = {Michele Marigo and Edmund Hugh Stitt},
+journal = {KONA Powder and Particle Journal},
+volume = {32},
+number = { },
+pages = {236-252},
+year = {2015},
+doi = {10.14356/kona.2015016},
+abstract = {
+    As a consequence of increasing computer power and more readily useable
+    commercial and open source codes, Discrete Element Method (DEM) is becoming
+    widely used across a range of applications to simulate increasingly complex
+    processes. This is exacerbating the challenge of setting up simulations for
+    industrial applications. The literature on input parameter selection is
+    divided. A number of papers report methods for their direct measurement.
+    Others, by contrast, propose a “calibration” approach where the particle
+    properties are derived as adjustable parameters by quantitative comparison
+    of experimental and simulation results. This paper reports on the
+    calibration and validation of the input parameters for the specific case of
+    cylindrical tablets represented by conjoined spheres. The initial steps are
+    to not only assign and optimise the DEM input parameters but also optimise
+    the shape representation; what degree of linearity of the edges and
+    angularity of the corners are required to accurately reflect the cylindrical
+    shape. The model was used to simulate two configurations of a rotating drum:
+    an “attrition tester” with a single longitudinal baffle and an un-baffled
+    drum. The results were compared qualitatively and quantitatively with
+    experimental data. While the qualitative comparison was good in most cases,
+    detailed quantitative comparison fared less well, with some significant
+    errors. This study highlights some of the key issues for a wider-spread of
+    industrial applications for DEM.
+}
+}
+
 @article{2015-oe-jiang,
 author = {Sheng-Chao Jiang and Bin Teng and Wei Bai and Ying Gou},
 journal = {Ocean Engineering},
@@ -2964,6 +3001,53 @@ doi = {10.1016/j.powtec.2018.11.031},
 publisher = {Elsevier BV},
 }
 
+@article{2019-powtec-roessler,
+title = {
+    Development of a standard calibration procedure for the DEM parameters of
+    cohesionless bulk materials – part I: Solving the problem of ambiguous
+    parameter combinations
+},
+journal = {Powder Technology},
+volume = {343},
+pages = {803-812},
+year = {2019},
+issn = {0032-5910},
+doi = {https://doi.org/10.1016/j.powtec.2018.11.034},
+url = {https://www.sciencedirect.com/science/article/pii/S0032591018309380},
+author = {
+    Thomas Roessler and Christian Richter and André Katterfeld and Frank Will
+},
+keywords = {
+    Discrete element method, Calibration, Lifting cylinder, Draw down, Shear
+    box, Hopper discharge, Standard calibration procedure for the DEM parameters
+    of cohesionless bulk materials, Solving the problem of ambiguous parameter
+    combinations
+},
+abstract = {
+    The numerical complexity of Discrete Element Method (DEM) simulations
+    generally forces an idealisation of DEM models, making the calibration
+    process the key to realistic simulation results. When calibrating
+    cohesionless, free-flowing bulk materials, individual simple experiments are
+    commonly used as reference for the calibration, such as the angle of repose
+    in various test methods. Regardless of the experiment, the calibration is
+    regularly performed by trial and error, systematic variation of the
+    parameters, or using optimisation algorithms until a suitable combination of
+    parameters is found. A problem of the calibration, which is often ignored,
+    is the ambiguity of these parameter combinations. Thus, there are usually a
+    variety of contact parameters that can map the same macroscopic reference
+    value. This paper deals in detail with the ambiguity of parameter
+    combinations during the calibration process. It shows which standard tests
+    can be used to generate different experimental reference values for the
+    calibration. The results of simulations with systematic parameter variation
+    highlight the problem of ambiguity. Subsequently it will be shown how the
+    combination of different tests can significantly reduce the acceptable
+    parameter combinations. A modified draw down test will be presented as a
+    calibration test which can deliver different reference values in a single
+    test. Hence, this calibration test allows to obtain an almost unique set of
+    DEM parameter.
+}
+}
+
 @incollection{2019-sehbet-miranda,
 editor = {Paulo Emilio V. de Miranda},
 booktitle = {Science and Engineering of Hydrogen-Based Energy Technologies},
@@ -3209,6 +3293,46 @@ keywords = {
     Thermal DEM, Heat transfer modelling, CFD, Particulate flow, Thermal
     processes, Thermal models
 },
+}
+
+@article{2020-powtec-richter,
+title = {
+    Development of a standard calibration procedure for the DEM parameters of
+    cohesionless bulk materials – Part II: Efficient optimization-based
+    calibration
+},
+journal = {Powder Technology},
+volume = {360},
+pages = {967-976},
+year = {2020},
+issn = {0032-5910},
+doi = {https://doi.org/10.1016/j.powtec.2019.10.052},
+url = {https://www.sciencedirect.com/science/article/pii/S0032591019308757},
+author = {
+    Christian Richter and Thomas Roessler and Gunter Kunze and Andre Katterfeld
+    and Frank Will
+},
+keywords = {
+    Discrete element method, Calibration, Optimization, Surrogate model, Draw
+    down
+},
+abstract = {
+    The numerical complexity of Discrete Element Method (DEM) simulations
+    generally forces an idealisation of DEM models, making the calibration
+    process the key to realistic simulation results. When calibrating
+    cohesionless, free-flowing bulk materials, individual simple experiments are
+    commonly used as reference for the calibration, such as the angle of repose
+    in various test methods. Regardless of the experiment, the calibration is
+    regularly performed by trial and error, systematic variation of the
+    parameters, or using optimization algorithms until a suitable combination of
+    parameters is found. This paper deals with the development and test of a
+    highly efficient optimization-based calibration procedure. First, a brief
+    overview of various optimization methods is given and explains why the use
+    of surrogate models seems the best choice for DEM calibration. Subsequently,
+    a new modular algorithm called “generalized surrogate modeling-based
+    calibration” (GSMC) is presented. For testing the new algorithm, a modified
+    draw down test is used.
+}
 }
 
 @inproceedings{2020-siggraph-wald,
