@@ -4597,3 +4597,108 @@ abstract = {
 doi = {10.1016/j.powtec.2025.121027},
 publisher = {Elsevier BV},
 }
+
+@article{2026-ijhmt-aguirre,
+title = {
+    High-performance Monte Carlo ray tracing for radiative view factor
+    calculation of spheres in discrete element simulations using GPU hardware
+    acceleration
+},
+journal = {International Journal of Heat and Mass Transfer},
+volume = {271},
+pages = {129318},
+year = {2026},
+issn = {0017-9310},
+doi = {https://doi.org/10.1016/j.ijheatmasstransfer.2026.129318},
+url = {https://www.sciencedirect.com/science/article/pii/S0017931026009944},
+author = {
+    João Américo {Aguirre Oliveira} and Lucilla Coelho {de Almeida} and Francis
+    Henrique Ramos França
+},
+keywords = {
+    Discrete Element Method (DEM), Monte Carlo ray tracing, GPU acceleration,
+    Radiative view factor, Quasi-Monte Carlo, NVIDIA OptiX
+},
+abstract = {
+    This work presents a first step toward a complete investigation of the
+    feasibility of Direct Simulation of Radiation by Monte Carlo (DSRMC) in
+    Discrete Element Method (DEM) environments using hardware-accelerated Monte
+    Carlo ray tracing (MCRT) and Quasi-Monte Carlo Ray Tracing (QMCRT). The
+    approach employs the NVIDIA OptiX library, CUDA, and RT-Cores to execute ray
+    generation, BVH traversal, and analytic ray–geometry intersection fully on
+    the GPU. In this foundational study, validation was performed strictly on
+    static geometries to rigorously isolate single-precision hardware accuracy
+    and ray performance. Accuracy was assessed through classical sphere–sphere
+    benchmarks and highly occluded crystalline particle lattices, with computed
+    view factors showing excellent agreement with analytical and semi-analytical
+    references. Randomized Quasi–Monte Carlo ray tracing (RQMCRT) sampling
+    produced both lower initial uncertainty and faster convergence rates (up to
+    Ne−0.60) than standard Monte Carlo (Ne−0.50), enabling order-of-magnitude
+    reductions in the ray count required for engineering accuracy. A predictive
+    framework was developed to estimate the necessary ray budget on-the-fly,
+    enabling the use of standard user settings such as a convergence criterion
+    and a maximum number of rays, providing a practical stopping mechanism for
+    DSRMC simulations. Performance studies demonstrated that ray tracing costs
+    are effectively independent of scene complexity: increasing the number of
+    particles by two orders of magnitude showed no significant increase in
+    runtime. The solver achieved ∼109 rays per second on an NVIDIA Quadro RTX
+    A6000, indicating that next-generation devices will further accelerate
+    DSRMC. These results establish a scalable, accurate, and memory-efficient
+    foundation for integrating high-fidelity radiative heat transfer directly
+    into industrial-scale DEM simulations, with the extension of this framework
+    into a fully coupled, dynamic DEM time-stepping loop remaining as a critical
+    next step for future research.
+}
+}
+
+@inproceedings{2026-ihtc-aguirre,
+author = {
+    João Américo {Aguirre Oliveira} and Lucilla Coelho {de Almeida} and Francis
+    Henrique Ramos França
+},
+editor = {
+    Associação Brasileira de Engenharia e Ciências Mecânicas - ABCM
+},
+booktitle = {
+    International Heat Transfer Conference 18
+},
+title = {
+    Evaluation of High Performance Monte Carlo Ray Tracing Methods for Thermal
+    Radiation in Discrete Element Simulations
+},
+year = {2026},
+number = {IHTC18-0781},
+pages = {10},
+publisher = {International Heat Transfer Conference Digital Library},
+address = {Rio de Janeiro},
+abstract = {
+    Industrial applications of the Discrete Element Method (DEM) often involve
+    millions of particles, frequently non-spherical, composed of different
+    materials, and interacting with complex boundaries. Incorporating thermal
+    radiation modeling into such simulations is especially challenging due to
+    these characteristics and the inherent complexity of radiation heat
+    transfer.
+    Monte Carlo methods have long been used to model complex radiative
+    phenomena, including directional and spectral effects. In the DEM context,
+    they are typically employed to generate reference data used to calibrate
+    approximate radiation models, later applied in more complex scenarios.
+    In this work, implementations of Direct Simulation of Radiation by Monte
+    Carlo (DSRMC) tailored for DEM, using Monte Carlo and quasi-Monte Carlo ray
+    tracing methods that directly simulate thermal radiation are presented.
+    These implementations explore massively parallel GPU processing and
+    hardware-accelerated ray tracing, originally developed for computer
+    graphics, in engineering applications. The hardware tools provide efficient
+    handling of geometric primitives such as spheres and triangles, which
+    facilitates their use in DEM scenarios.
+    The proposed methods were validated through the computation of view factors
+    in simple geometries and crystalline lattices, and then extended to
+    DEM-based radiation problems. Different Monte Carlo approaches are also
+    investigated, including the selection of radiating entities, the number of
+    rays required for statistical convergence, and coupling with inherently
+    transient DEM simulations typically solved with explicit schemes. The
+    results show that the presented methods make DSRMC with quasi-Monte Carlo
+    ray tracing a feasible approach for modeling thermal radiation in complex
+    DEM simulations.
+}
+}
+
